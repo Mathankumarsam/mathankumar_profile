@@ -39,59 +39,6 @@ export default function page() {
           ))}
         </div>
       </div>
-
-      {/* Values Section */}
-      <div className="mt-16  p-8 rounded-lg ">
-        <h2 className="text-4xl font-thin text-[#8a6d16] mb-6">Core Values</h2>
-        <p className="text-lg leading-relaxed text-gray-700 mb-6 font-thin ">
-          My work is guided by principles that ensure I deliver top-notch
-          quality and value:
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[
-            {
-              title: "Innovation",
-              description:
-                "I love solving complex problems with creative solutions.",
-            },
-            {
-              title: "Collaboration",
-              description:
-                "I believe in working closely with clients for the best outcomes.",
-            },
-            {
-              title: "Excellence",
-              description:
-                "I strive for perfection in every project I undertake.",
-            },
-          ].map((value, idx) => (
-            <div
-              key={idx}
-              className="bg-white p-6 rounded-lg shadow-md border-t-4 border-[#8a6d16]"
-            >
-              <h3 className="text-xl font-medium mb-2">{value.title}</h3>
-              <p className="text-gray-700">{value.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Call to Action Section */}
-      <div className="mt-16 text-center">
-        <h2 className="text-4xl font-thin text-[#8a6d16] mb-4">
-          Want to Work Together?
-        </h2>
-        <p className="text-lg leading-relaxed text-gray-700 mb-6">
-          I'm always excited to collaborate on meaningful projects. Let's create
-          something amazing together!
-        </p>
-        <a
-          href="/contact"
-          className="px-8 py-3 bg-[#8a6d16] text-white rounded-md  hover:bg-[#714e0b] transition"
-        >
-          Get in Touch
-        </a>
-      </div>
     </section>
   );
 }
